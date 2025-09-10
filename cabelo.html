@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabelo | Guia de Bem-Estar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">CUIDE DE VOCÊ</a></div>
+            <ul>
+                <li><a href="corpo.html">Corpo</a></li>
+                <li><a href="moda.html">Moda</a></li>
+                <li><a href="cabelo.html" class="active">Cabelo</a></li>
+                <li><a href="pele.html">Pele</a></li>
+                <li><a href="autoestima.html">Autoestima</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="cabelo">
+            <h2>Cabelo</h2>
+            <p>Existem vários tipos de cabelo e cada um exige um cuidado apropriado. Entenda a sua curvatura e aprenda a valorizá-la.</p>
+            <div class="tabs">
+                <button class="tablink" onclick="openHair(event, 'Liso')">Liso</button>
+                <button class="tablink" onclick="openHair(event, 'Ondulado')">Ondulado</button>
+                <button class="tablink" onclick="openHair(event, 'Cacheado')">Cacheado</button>
+                <button class="tablink" onclick="openHair(event, 'Crespo')">Crespo</button>
+            </div>
+            <div id="Liso" class="hair-content">
+                <h3>Cabelo Liso</h3>
+                <p><strong>Característica:</strong> Tende a ser mais oleoso na raiz. <br><strong>Dicas:</strong> Necessita de hidratação semanal e proteção térmica antes de usar secador ou chapinha. Uma boa alimentação é fundamental para evitar que os fios fiquem danificados.</p>
+            </div>
+            <div id="Ondulado" class="hair-content" style="display:none">
+                <h3>Cabelo Ondulado</h3>
+                <p><strong>Característica:</strong> Geralmente misto (raiz oleosa e pontas secas) e com tendência a frizz.<br><strong>Dicas:</strong> Use produtos leves e específicos para manter a definição. A hidratação e a nutrição são essenciais, assim como uma boa finalização para modelar as ondas.</p>
+            </div>
+            <div id="Cacheado" class="hair-content" style="display:none">
+                <h3>Cabelo Cacheado</h3>
+                <p><strong>Característica:</strong> Naturalmente mais seco, pois a oleosidade da raiz tem dificuldade de chegar às pontas.<br><strong>Dicas:</strong> Evite lavar todos os dias para preservar a hidratação natural. Capriche na finalização com cremes e óleos para definir os cachos e combater o frizz. A nutrição é fundamental.</p>
+            </div>
+            <div id="Crespo" class="hair-content" style="display:none">
+                 <h3>Cabelo Crespo</h3>
+                 <p><strong>Característica:</strong> Fios com curvatura bem fechada, geralmente mais finos, frágeis e com tendência ao ressecamento.<br>
+                 <strong>Dicas de Cuidado:</strong><br>
+                    • <strong>Hidratação Intensiva:</strong> Essencial, realize ao menos 2 vezes por semana.<br>
+                    • <strong>Nutrição:</strong> Finalize sempre com cremes apropriados e óleos vegetais para selar a umidade.<br>
+                    • <strong>Uso de Óleos:</strong> Aplique óleo nos fios pelo menos 2 vezes ao dia para combater o ressecamento.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dicas de Bem-Estar. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

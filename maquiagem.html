@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquiagem | Guia de Bem-Estar</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="rosa-theme.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">CUIDE DE VOCÊ</a></div>
+            <ul>
+                <li><a href="corpo.html">Corpo</a></li>
+                <li><a href="moda.html">Moda</a></li>
+                <li><a href="cabelo.html">Cabelo</a></li>
+                <li><a href="pele.html">Pele</a></li>
+                <li><a href="maquiagem.html" class="active">Maquiagem</a></li>
+                <li><a href="autoestima.html">Autoestima</a></li>
+                <li><a href="sobre.html" class="active">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="maquiagem">
+            <h2>Maquiagem</h2>
+            <p>Você sabia que a maquiagem pode te ajudar de várias formas? Ela pode realçar sua beleza, melhorar sua autoestima e autoconfiança, e fazer você se sentir mais bonita e segura. Além disso, ajuda a compor um visual mais apresentável para situações específicas.</p>
+
+            <div class="content-card">
+                <h3>Tipos de Maquiagem</h3>
+                <p>Existem muitos estilos de maquiagem para diferentes ocasiões e gostos. Explore alguns deles abaixo:</p>
+                <div class="tabs">
+                    <button class="tablink-makeup" onclick="openMakeup(event, 'CleanGirl')">Clean Girl</button>
+                    <button class="tablink-makeup" onclick="openMakeup(event, 'Trabalho')">Trabalho</button>
+                    <button class="tablink-makeup" onclick="openMakeup(event, 'Basica')">Básica</button>
+                    <button class="tablink-makeup" onclick="openMakeup(event, 'Monocromatica')">Monocromática</button>
+                    <button class="tablink-makeup" onclick="openMakeup(event, 'Colorida')">Colorida</button>
+                    <button class="tablink-makeup" onclick="openMakeup(event, 'Festa')">Festa</button>
+                    <button class="tablink-makeup" onclick="openMakeup(event, 'OlhoBoca')">Olho e Boca</button>
+                </div>
+
+                <div id="CleanGirl" class="makeup-content">
+                    <h4>Estilo Clean Girl</h4>
+                    <p>É um tipo de maquiagem mais natural, ideal para passeios no parque ou para receber amigos em casa. Geralmente, utilizam-se poucos produtos e em pequena quantidade, como lip tint, pó translúcido e máscara de cílios.</p>
+                </div>
+                <div id="Trabalho" class="makeup-content" style="display:none">
+                    <h4>Maquiagem para o Trabalho</h4>
+                    <p>Uma maquiagem profissional deve ser natural e elegante. O ideal é usar tons neutros, focando em uma pele com aspecto natural e um toque de cor saudável.</p>
+                </div>
+                <div id="Basica" class="makeup-content" style="display:none">
+                    <h4>Maquiagem Básica</h4>
+                    <p>É uma maquiagem minimalista, perfeita para o dia a dia ou para iniciantes, pois requer poucos produtos.</p>
+                </div>
+                <div id="Monocromatica" class="makeup-content" style="display:none">
+                    <h4>Maquiagem Monocromática</h4>
+                    <p>Neste estilo, utiliza-se a mesma paleta de cores para pele, olhos e boca, criando um visual sofisticado e harmonioso.</p>
+                </div>
+                 <div id="Colorida" class="makeup-content" style="display:none">
+                    <h4>Maquiagem Colorida</h4>
+                    <p>Usa cores alegres e vibrantes, principalmente em sombras, delineados, batons e blushes, para criar uma impressão animada.</p>
+                </div>
+                <div id="Festa" class="makeup-content" style="display:none">
+                    <h4>Maquiagem para Festa</h4>
+                    <p>É uma maquiagem mais elaborada para ocasiões especiais como casamentos, formaturas e jantares. Utiliza técnicas específicas para realçar a beleza do rosto.</p>
+                </div>
+                <div id="OlhoBoca" class="makeup-content" style="display:none">
+                    <h4>Maquiagem "Olho Tudo, Boca Nada"</h4>
+                    <p>Indicada para eventos noturnos, como festas e baladas. A técnica consiste em um olho bem marcado e esfumado (geralmente em preto) e uma boca suave, com um gloss ou batom nude. O resultado é um visual marcante e lindo.</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h3>Ordem Correta de Aplicação dos Produtos</h3>
+                <p>Seguir a ordem correta na aplicação dos produtos é fundamental para um bom resultado e maior durabilidade da maquiagem.</p>
+                <ol>
+                    <li>Sabonete Facial</li>
+                    <li>Hidratante</li>
+                    <li>Protetor Solar</li>
+                    <li>Primer</li>
+                    <li>Sobrancelha</li>
+                    <li>Sombra</li>
+                    <li>Delineador</li>
+                    <li>Lápis de Olho</li>
+                    <li>Base</li>
+                    <li>Corretivo</li>
+                    <li>Pó</li>
+                    <li>Blush</li>
+                    <li>Iluminador</li>
+                    <li>Lápis de Boca</li>
+                    <li>Batom</li>
+                    <li>Gloss</li>
+                    <li>Bruma Fixadora</li>
+                </ol>
+                <p><strong>Dica importante:</strong> Ao comprar seus produtos, prefira marcas conhecidas, com boas avaliações, e leia sempre as informações da embalagem.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dicas de Bem-Estar. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

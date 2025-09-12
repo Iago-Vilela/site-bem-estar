@@ -1,0 +1,7 @@
+/* Tema Vermelho - Maquiagem */
+body { background-color: #FFE4E1; color: #333; }
+header, footer { background-color: #DC143C; } /* Vermelho Carmesim */
+section h2, .content-card h3 { color: #8B0000; } /* Vermelho Escuro */
+.hero, .content-card { background-color: #F08080; border-left-color: #CD5C5C; } /* Coral Claro e Coral Indiano */
+.tablink-makeup { background-color: transparent; border: 2px solid #DC143C; color: #8B0000; }
+.tablink-makeup:hover, .tablink-makeup.active { background-color: #DC143C; color: white; }

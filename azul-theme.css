@@ -1,0 +1,7 @@
+/* Tema Azul - Pele */
+body { background-color: #F0F8FF; color: #333; }
+header, footer { background-color: #87CEEB; }
+section h2, .content-card h3 { color: #00008B; }
+.hero, .content-card { background-color: #B0E0E6; border-left-color: #87CEEB; }
+.tablink { background-color: transparent; border: 2px solid #87CEEB; color: #00008B; }
+.tablink:hover, .tablink.active { background-color: #87CEEB; color: white; }

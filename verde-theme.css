@@ -1,0 +1,8 @@
+/* Tema Verde - Landing Page e Autoestima */
+body { background-color: #EDF1D6; color: #333; }
+header, footer { background-color: #609966; }
+section h2, .content-card h3, .hero .call-to-action { color: #40513B; }
+.hero { background-color: #9DC08B; }
+.content-card { background-color: #fafcfa; border-left-color: #609966; }
+.hero .catchphrase-main { color: #40513B; }
+.hero .catchphrase-secondary { color: #609966; }

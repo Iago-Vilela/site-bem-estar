@@ -5,3 +5,9 @@ section h2, .content-card h3 { color: #8B0000; } /* Vermelho Escuro */
 .hero, .content-card { background-color: #F08080; border-left-color: #CD5C5C; } /* Coral Claro e Coral Indiano */
 .tablink-makeup { background-color: transparent; border: 2px solid #DC143C; color: #8B0000; }
 .tablink-makeup:hover, .tablink-makeup.active { background-color: #DC143C; color: white; }
+
+@media (max-width: 768px) {
+    .nav-links {
+        background-color: #DC143C; /* Cor do header do tema vermelho */
+    }
+}

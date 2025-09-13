@@ -6,3 +6,9 @@ section h2, .content-card h3, .hero .call-to-action { color: #40513B; }
 .content-card { background-color: #fafcfa; border-left-color: #609966; }
 .hero .catchphrase-main { color: #40513B; }
 .hero .catchphrase-secondary { color: #609966; }
+
+@media (max-width: 768px) {
+    .nav-links {
+        background-color: #609966; /* Cor do header do tema verde */
+    }
+}

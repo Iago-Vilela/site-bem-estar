@@ -27,6 +27,19 @@ function openMakeup(evt, makeupTypeName) {
     document.getElementById(makeupTypeName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+// --- CÓDIGO PARA O MENU RESPONSIVO ---
+const hamburger = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
+
+// Adiciona o evento de clique no botão hambúrguer
+if (hamburger) {
+    hamburger.addEventListener('click', () => {
+        // Alterna a classe 'active' para mostrar/esconder o menu
+        navLinks.classList.toggle('active');
+        // Alterna a classe 'active' para animar o ícone
+        hamburger.classList.toggle('active');
+    });
+}
 
 
 // Garante que a primeira aba de cada seção seja aberta por padrão

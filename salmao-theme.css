@@ -5,3 +5,9 @@ section h2, .content-card h3 { color: #8B4513; }
 .hero, .content-card { background-color: #FAEBD7; border-left-color: #E9967A; }
 .tablink { background-color: transparent; border: 2px solid #E9967A; color: #8B4513; }
 .tablink:hover, .tablink.active { background-color: #E9967A; color: white; }
+
+@media (max-width: 768px) {
+    .nav-links {
+        background-color: #E9967A; /* Cor do header do tema salmão */
+    }
+}

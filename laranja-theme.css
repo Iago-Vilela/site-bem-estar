@@ -5,3 +5,9 @@ section h2, .content-card h3 { color: #A0522D; }
 .hero, .content-card { background-color: #FFDAB9; border-left-color: #FFA07A; }
 .tablink { background-color: transparent; border: 2px solid #FFA07A; color: #A0522D; }
 .tablink:hover, .tablink.active { background-color: #FFA07A; color: white; }
+
+@media (max-width: 768px) {
+    .nav-links {
+        background-color: #FFA07A; /* Cor do header do tema laranja */
+    }
+}

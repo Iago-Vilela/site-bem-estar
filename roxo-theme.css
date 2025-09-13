@@ -5,3 +5,9 @@ section h2, .content-card h3 { color: #483D8B; }
 .hero, .content-card { background-color: #E6E6FA; border-left-color: #9370DB; }
 .tablink { background-color: transparent; border: 2px solid #9370DB; color: #483D8B; }
 .tablink:hover, .tablink.active { background-color: #9370DB; color: white; }
+
+@media (max-width: 768px) {
+    .nav-links {
+        background-color: #9370DB; /* Cor do header do tema roxo */
+    }
+}

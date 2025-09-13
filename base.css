@@ -6,7 +6,23 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/* --- Ajuste definitivo para alinhamento de listas --- */
 
+/* Garante que os marcadores da lista (bolinhas) fiquem para dentro da área de texto */
+section ul {
+    list-style-position: inside;
+    margin-top: 1rem;
+}
+
+/* Remove o espaçamento extra que não é mais necessário */
+section ul {
+    padding-left: 0; 
+}
+
+/* Garante que cada item da lista tenha um pequeno espaço abaixo */
+section ul li {
+    margin-bottom: 0.5rem;
+}
 body {
     line-height: 1.6;
     display: flex;
@@ -139,7 +155,84 @@ footer {
 .hero .catchphrase-main { font-family: 'Poppins', sans-serif; font-size: 4rem; font-weight: 700; margin-bottom: 0.5rem; line-height: 1.1; }
 .hero .catchphrase-secondary { font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 600; margin-bottom: 2rem; letter-spacing: 0.05em; }
 
+/* --- ESTILOS DO MENU RESPONSIVO --- */
+
+/* Estilo do botão Hambúrguer */
+.hamburger-menu {
+    display: none; /* Escondido em telas grandes */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.hamburger-menu .bar {
+    display: block;
+    width: 2rem;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Media Query para telas pequenas (celulares) */
+/* --- Estilo para lista de produtos em duas colunas --- */
+
+.product-order-list {
+  column-count: 2; /* Divide a lista em 2 colunas */
+  column-gap: 2rem; /* Espaço entre as colunas */
+  padding-left: 2rem; /* Ajusta o espaçamento interno da lista */
+}
+
+/* Garante que a lista volte a ter uma coluna em telas pequenas */
+@media (max-width: 576px) {
+  .product-order-list {
+    column-count: 1; /* Volta para 1 coluna em celulares */
+  }
+}
 @media (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 65px; /* Altura do seu header */
+        left: -100%; /* Começa fora da tela */
+        width: 100%;
+        padding: 1rem 0;
+        transition: left 0.4s ease-in-out;
+    }
+
+    .nav-links.active {
+        left: 0; /* Traz o menu para a tela */
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    /* Mostra o ícone do hambúrguer */
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /* Animação do Hambúrguer para "X" */
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+    }
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+    }
     nav ul { display: none; }
     section { padding: 2rem 1rem; }
     section h2 { font-size: 2rem; }

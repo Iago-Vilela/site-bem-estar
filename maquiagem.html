@@ -10,17 +10,24 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="index.html">CUIDE DE VOCÊ</a></div>
-            <ul>
-                <li><a href="corpo.html">Corpo</a></li>
-                <li><a href="moda.html">Moda</a></li>
-                <li><a href="cabelo.html">Cabelo</a></li>
-                <li><a href="pele.html">Pele</a></li>
-                <li><a href="maquiagem.html" class="active">Maquiagem</a></li>
-                <li><a href="autoestima.html">Autoestima</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-            </ul>
-        </nav>
+    <div class="logo"><a href="index.html">CUIDE DE VOCÊ</a></div>
+    
+    <ul class="nav-links">
+        <li><a href="corpo.html">Corpo</a></li>
+        <li><a href="moda.html">Moda</a></li>
+        <li><a href="cabelo.html">Cabelo</a></li>
+        <li><a href="pele.html">Pele</a></li>
+        <li><a href="maquiagem.html" class="active">Maquiagem</a></li>
+        <li><a href="autoestima.html">Autoestima</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+    </ul>
+
+    <button class="hamburger-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+</nav>
     </header>
     <main>
         <section id="maquiagem">
@@ -73,7 +80,7 @@
             <div class="content-card">
                 <h3>Ordem Correta de Aplicação dos Produtos</h3>
                 <p>Seguir a ordem correta na aplicação dos produtos é fundamental para um bom resultado e maior durabilidade da maquiagem.</p>
-                <ol>
+                <ol class="product-order-list">
                     <li>Sabonete Facial</li>
                     <li>Hidratante</li>
                     <li>Protetor Solar</li>
@@ -101,5 +108,4 @@
     </footer>
     <script src="script.js"></script>
 </body>
-
 </html>

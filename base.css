@@ -120,7 +120,28 @@ section h2 {
 .hair-content, .makeup-content {
     animation: fadeEffect 1s;
 }
+/* Estilo para o card da imagem do grupo */
+.image-card {
+    padding: 1rem;
+    background-color: #fff; /* Garante fundo branco mesmo se o tema mudar */
+}
 
+.image-card img {
+    max-width: 600px;   /* Define um tamanho máximo para a imagem */
+    width: 100%;        /* Garante que a imagem seja responsiva */
+    height: auto;
+    display: block;     /* Necessário para a centralização */
+    margin: 0 auto;     /* Centraliza a imagem horizontalmente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.image-card .image-caption {
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 1rem;
+    color: #555;
+}
 @keyframes fadeEffect {
     from { opacity: 0; }
     to { opacity: 1; }
